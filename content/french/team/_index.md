@@ -17,7 +17,7 @@ draft: false
     name="Prof. Erik A. Poirier, Ph.D., PMP"
     role="Chercheur principal"
     institution="ÉTS"
-    expertise="Gestion de la construction et BIM"
+    expertise="Gestion de la construction et transformation numérique"
     linkedin=""
 >}}
 
@@ -34,7 +34,7 @@ draft: false
     name="Prof. Alejandro Romero-Torres"
     role="Co-chercheur"
     institution="UQAM"
-    expertise="Données"
+    expertise="Données et gouvernance"
     linkedin=""
 >}}
 
@@ -43,7 +43,7 @@ draft: false
     name="Prof. Ali Motamedi"
     role="Co-chercheur"
     institution="ÉTS"
-    expertise="Intelligence artificielle"
+    expertise="Intelligence artificielle et BIM"
     linkedin=""
 >}}
 
@@ -79,7 +79,7 @@ draft: false
     name="Prof. Gabriel Jobidon"
     role="Co-chercheur"
     institution="ÉTS"
-    expertise="Politiques"
+    expertise="Politiques et réglementation"
     linkedin=""
 >}}
 
@@ -88,7 +88,7 @@ draft: false
     name="Prof. Ivanka Iordanova"
     role="Co-chercheuse"
     institution="ÉTS"
-    expertise="Innovation"
+    expertise="Innovation et industrialisation"
     linkedin=""
 >}}
 
@@ -97,7 +97,7 @@ draft: false
     name="Prof. Mario Bourgault"
     role="Co-chercheur"
     institution="Polytechnique"
-    expertise="Gestion de projets"
+    expertise="Gestion de projets et qualité"
     linkedin=""
 >}}
 
@@ -115,7 +115,7 @@ draft: false
     name="Prof. Sara Rankohi"
     role="Co-chercheuse"
     institution="UQAM"
-    expertise="Visualisation"
+    expertise="Visualisation, données et gestion de projet"
     linkedin=""
 >}}
 
