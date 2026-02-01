@@ -17,7 +17,7 @@ draft: false
     name="Prof. Erik A. Poirier, Ph.D., PMP"
     role="Principal Investigator"
     institution="ÉTS"
-    expertise="Construction Management and BIM"
+    expertise="Construction Management and Digital Transformation"
     linkedin=""
 >}}
 
@@ -34,7 +34,7 @@ draft: false
     name="Prof. Alejandro Romero-Torres"
     role="Co-Investigator"
     institution="UQAM"
-    expertise="Data"
+    expertise="Data and Governance"
     linkedin=""
 >}}
 
@@ -43,7 +43,7 @@ draft: false
     name="Prof. Ali Motamedi"
     role="Co-Investigator"
     institution="ÉTS"
-    expertise="Artificial Intelligence"
+    expertise="Artificial Intelligence and BIM"
     linkedin=""
 >}}
 
@@ -79,7 +79,7 @@ draft: false
     name="Prof. Gabriel Jobidon"
     role="Co-Investigator"
     institution="ÉTS"
-    expertise="Policies"
+    expertise="Policies and Regulations"
     linkedin=""
 >}}
 
@@ -88,7 +88,7 @@ draft: false
     name="Prof. Ivanka Iordanova"
     role="Co-Investigator"
     institution="ÉTS"
-    expertise="Innovation"
+    expertise="Innovation and Industrialization"
     linkedin=""
 >}}
 
@@ -97,7 +97,7 @@ draft: false
     name="Prof. Mario Bourgault"
     role="Co-Investigator"
     institution="Polytechnique"
-    expertise="Project Management"
+    expertise="Project Management and Quality"
     linkedin=""
 >}}
 
@@ -115,7 +115,7 @@ draft: false
     name="Prof. Sara Rankohi"
     role="Co-Investigator"
     institution="UQAM"
-    expertise="Visualization"
+    expertise="Visualization, Data and Project Management"
     linkedin=""
 >}}
 
