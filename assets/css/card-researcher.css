@@ -1,0 +1,132 @@
+/* Card Researcher Styles */
+
+/* Container for all researcher cards - 2 columns grid */
+.researchers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-researcher {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg, #ffffff);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-researcher:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-researcher-image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.card-researcher-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-researcher-content {
+  flex: 1;
+}
+
+.card-researcher-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color, #333);
+}
+
+.card-researcher-role {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--text-color, #555);
+}
+
+.card-researcher-expertise {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted, #777);
+}
+
+.card-researcher-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  color: #0077b5;
+  text-decoration: none;
+  border: 1px solid #0077b5;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-researcher-linkedin:hover {
+  background-color: #0077b5;
+  color: #ffffff;
+}
+
+.card-researcher-linkedin svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive - 1 column on smaller screens */
+@media (max-width: 900px) {
+  .researchers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-researcher {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-researcher-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-researcher-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .card-researcher {
+    background-color: var(--card-bg-dark, #2a2a2a);
+  }
+
+  .card-researcher-name {
+    color: var(--heading-color-dark, #f0f0f0);
+  }
+
+  .card-researcher-role {
+    color: var(--text-color-dark, #ccc);
+  }
+
+  .card-researcher-expertise {
+    color: var(--text-muted-dark, #999);
+  }
+}

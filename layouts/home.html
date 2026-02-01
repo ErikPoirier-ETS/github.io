@@ -33,7 +33,7 @@
     </section>
   {{ end }}
   <!-- /Banner -->
-
+  {{ partial "partners" . }}
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">

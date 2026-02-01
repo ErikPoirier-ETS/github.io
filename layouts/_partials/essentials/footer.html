@@ -1,58 +1,31 @@
 <footer class="bg-light dark:bg-darkmode-light">
-  <div class="container">
-    <div class="row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <!-- navbar brand/logo -->
-        <a
-          class="navbar-brand inline-block"
-          href="{{ site.Home.RelPermalink }}">
-          {{/* https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
-          {{ partial "logo" }}
+  <!-- Funding Logos Section -->
+  <div class="border-border dark:border-darkmode-border border-b">
+    <div class="container py-8">
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        <span class="text-text-light dark:text-darkmode-text-light text-sm">{{ if eq site.Language.Lang "fr" }}Financé par{{ else }}Funded by{{ end }}</span>
+        <a href="https://www.quebec.ca/" target="_blank" rel="noopener" class="opacity-70 hover:opacity-100 transition-opacity">
+          <img src="/images/partners/quebec-gov.svg" alt="Government of Quebec" class="h-12 w-auto dark:brightness-0 dark:invert" />
         </a>
-      </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
-        <ul>
-          {{ range site.Menus.footer }}
-            <li class="m-3 inline-block">
-              <a
-                {{ if findRE `^http` .URL }}
-                  target="_blank" rel="noopener"
-                {{ end }}
-                href="{{ if findRE `^#` .URL }}
-                  {{ if not $.IsHome }}
-                    {{ site.Home.RelPermalink }}
-                  {{ end }}{{ .URL }}
-                {{ else }}
-                  {{ .URL | relLangURL }}
-                {{ end }}"
-                >{{ .Name }}</a
-              >
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
-        <ul class="social-icons">
-          {{ range site.Data.social.main }}
-            <li>
-              <a
-                target="_blank"
-                aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
+        <a href="https://www.nserc-crsng.gc.ca/" target="_blank" rel="noopener" class="opacity-70 hover:opacity-100 transition-opacity">
+          <img src="/images/partners/nserc.svg" alt="NSERC / CRSNG" class="h-12 w-auto dark:brightness-0 dark:invert" />
+        </a>
       </div>
     </div>
   </div>
-  <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div
-      class="text-text-light dark:text-darkmode-text-light container text-center">
-      <p>
-        {{ site.Params.copyright | markdownify }}
+
+  <!-- Copyright Section -->
+  <div class="py-8">
+    <div class="container text-center">
+      <p class="text-text-light dark:text-darkmode-text-light text-sm">
+        © {{ now.Year }} GRIDD — École de technologie supérieure (ÉTS), UQAM, Polytechnique Montréal
+      </p>
+      <p class="text-text-light dark:text-darkmode-text-light text-xs mt-sm">
+        {{ if eq site.Language.Lang "fr" }}
+          Tous droits réservés.
+        {{ else }}
+          All rights reserved.
+        {{ end }}
       </p>
     </div>
   </div>

@@ -1,0 +1,65 @@
+{{ with .Params.partners }}
+  {{ if .enable }}
+    <section class="section pt-0">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2 class="mb-4">{{ .title }}</h2>
+          <p class="text-text-light dark:text-darkmode-text-light">{{ .description }}</p>
+        </div>
+
+        <!-- Public Owners -->
+        {{ with .public_owners }}
+          <div class="mb-12">
+            <h3 class="text-center text-lg font-medium text-text-light dark:text-darkmode-text-light mb-8">{{ .title }}</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {{ range .items }}
+                <a 
+                  href="{{ .link }}" 
+                  target="_blank" 
+                  rel="noopener"
+                  title="{{ .name }}"
+                  class="group"
+                >
+                  <div class="bg-white dark:bg-darkmode-body rounded-lg shadow-sm border border-border dark:border-darkmode-border p-4 h-24 flex items-center justify-center transition-all duration-300 hover:shadow-md hover:border-primary dark:hover:border-primary">
+                    <img 
+                      src="{{ .logo }}" 
+                      alt="{{ .name }}" 
+                      class="max-h-14 max-w-[120px] w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 dark:brightness-0 dark:invert"
+                    />
+                  </div>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        <!-- Academic Partners -->
+        {{ with .academic }}
+          <div>
+            <h3 class="text-center text-lg font-medium text-text-light dark:text-darkmode-text-light mb-8">{{ .title }}</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+              {{ range .items }}
+                <a 
+                  href="{{ .link }}" 
+                  target="_blank" 
+                  rel="noopener"
+                  title="{{ .name }}"
+                  class="group"
+                >
+                  <div class="bg-white dark:bg-darkmode-body rounded-lg shadow-sm border border-border dark:border-darkmode-border p-4 h-28 flex items-center justify-center transition-all duration-300 hover:shadow-md hover:border-primary dark:hover:border-primary">
+                    <img 
+                      src="{{ .logo }}" 
+                      alt="{{ .name }}" 
+                      class="max-h-22 max-w-[120px] w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 dark:brightness-0 dark:invert"
+                    />
+                  </div>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

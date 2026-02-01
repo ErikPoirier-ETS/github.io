@@ -1,0 +1,552 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 500" width="1920" height="500">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f7f7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e6f4f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d1faf5;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00a8cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Building gradients with more depth -->
+    <linearGradient id="buildingFar" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a1525;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#132840;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <linearGradient id="buildingMid" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d2035;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#1a4a6e;stop-opacity:0.75" />
+    </linearGradient>
+    
+    <linearGradient id="buildingNear" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#102a45;stop-opacity:0.98" />
+      <stop offset="100%" style="stop-color:#1d5a80;stop-opacity:0.85" />
+    </linearGradient>
+    
+    <linearGradient id="buildingFront" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f3555;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#206080;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Bridge gradients -->
+    <linearGradient id="bridgeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5070;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#e6f4f1;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="cableGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00a8cc;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <linearGradient id="gridGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8cc;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#00a8cc;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Road/infrastructure gradient -->
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f5f7f7;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#152535;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f5f7f7;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Glow filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="distantBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+    
+    <!-- Grid pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00a8cc" stroke-width="0.5" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Noise texture -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1920" height="500" fill="url(#mainGradient)"/>
+  <rect width="1920" height="500" fill="url(#mainGradient)" filter="url(#noise)" opacity="0.3"/>
+  <rect width="1920" height="500" fill="url(#gridPattern)" opacity="0.4"/>
+  
+  <!-- Perspective grid lines -->
+  <g opacity="0.2">
+    <line x1="960" y1="200" x2="0" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="240" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="480" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="720" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="1200" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="1440" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="1680" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+    <line x1="960" y1="200" x2="1920" y2="500" stroke="#00a8cc" stroke-width="0.5"/>
+  </g>
+  
+  <!-- ========== FAR BACKGROUND LAYER (Most distant, smaller, blurred) ========== -->
+  <g filter="url(#distantBlur)" opacity="0.5">
+    <!-- Far left buildings -->
+    <rect x="20" y="320" width="35" height="180" fill="url(#buildingFar)"/>
+    <rect x="60" y="300" width="40" height="200" fill="url(#buildingFar)"/>
+    <rect x="105" y="330" width="30" height="170" fill="url(#buildingFar)"/>
+    <rect x="140" y="290" width="45" height="210" fill="url(#buildingFar)"/>
+    <rect x="190" y="310" width="35" height="190" fill="url(#buildingFar)"/>
+    
+    <!-- Far center-left -->
+    <rect x="420" y="280" width="50" height="220" fill="url(#buildingFar)"/>
+    <rect x="475" y="300" width="40" height="200" fill="url(#buildingFar)"/>
+    <rect x="520" y="270" width="55" height="230" fill="url(#buildingFar)"/>
+    
+    <!-- Far center-right -->
+    <rect x="1345" y="280" width="50" height="220" fill="url(#buildingFar)"/>
+    <rect x="1400" y="300" width="40" height="200" fill="url(#buildingFar)"/>
+    <rect x="1445" y="270" width="55" height="230" fill="url(#buildingFar)"/>
+    
+    <!-- Far right buildings -->
+    <rect x="1695" y="310" width="35" height="190" fill="url(#buildingFar)"/>
+    <rect x="1735" y="290" width="45" height="210" fill="url(#buildingFar)"/>
+    <rect x="1785" y="330" width="30" height="170" fill="url(#buildingFar)"/>
+    <rect x="1820" y="300" width="40" height="200" fill="url(#buildingFar)"/>
+    <rect x="1865" y="320" width="55" height="180" fill="url(#buildingFar)"/>
+    
+    <!-- Distant windows (tiny dots) -->
+    <g fill="#00a8cc" opacity="0.3">
+      <rect x="70" y="310" width="4" height="6"/><rect x="80" y="310" width="4" height="6"/>
+      <rect x="150" y="300" width="5" height="7"/><rect x="162" y="300" width="5" height="7"/>
+      <rect x="430" y="290" width="5" height="7"/><rect x="442" y="290" width="5" height="7"/>
+      <rect x="1355" y="290" width="5" height="7"/><rect x="1367" y="290" width="5" height="7"/>
+      <rect x="1745" y="300" width="5" height="7"/><rect x="1757" y="300" width="5" height="7"/>
+    </g>
+  </g>
+  
+  <!-- ========== MID-BACKGROUND LAYER ========== -->
+  <g opacity="0.7">
+    <!-- Mid-left cluster -->
+    <rect x="35" y="280" width="55" height="220" fill="url(#buildingMid)"/>
+    <rect x="95" y="250" width="70" height="250" fill="url(#buildingMid)"/>
+    <rect x="170" y="270" width="50" height="230" fill="url(#buildingMid)"/>
+    <rect x="225" y="290" width="60" height="210" fill="url(#buildingMid)"/>
+    <rect x="290" y="260" width="55" height="240" fill="url(#buildingMid)"/>
+    
+    <!-- Mid center-left -->
+    <rect x="480" y="240" width="65" height="260" fill="url(#buildingMid)"/>
+    <rect x="550" y="260" width="55" height="240" fill="url(#buildingMid)"/>
+    <rect x="610" y="230" width="70" height="270" fill="url(#buildingMid)"/>
+    
+    <!-- Mid center-right -->
+    <rect x="1240" y="230" width="70" height="270" fill="url(#buildingMid)"/>
+    <rect x="1315" y="260" width="55" height="240" fill="url(#buildingMid)"/>
+    <rect x="1375" y="240" width="65" height="260" fill="url(#buildingMid)"/>
+    
+    <!-- Mid-right cluster -->
+    <rect x="1575" y="260" width="55" height="240" fill="url(#buildingMid)"/>
+    <rect x="1635" y="290" width="60" height="210" fill="url(#buildingMid)"/>
+    <rect x="1700" y="270" width="50" height="230" fill="url(#buildingMid)"/>
+    <rect x="1755" y="250" width="70" height="250" fill="url(#buildingMid)"/>
+    <rect x="1830" y="280" width="55" height="220" fill="url(#buildingMid)"/>
+    
+    <!-- Mid-layer windows -->
+    <g fill="#00a8cc" opacity="0.4">
+      <!-- Left cluster windows -->
+      <rect x="105" y="260" width="8" height="12"/><rect x="120" y="260" width="8" height="12"/><rect x="135" y="260" width="8" height="12"/>
+      <rect x="105" y="280" width="8" height="12"/><rect x="120" y="280" width="8" height="12"/><rect x="135" y="280" width="8" height="12"/>
+      <rect x="235" y="300" width="7" height="10"/><rect x="248" y="300" width="7" height="10"/><rect x="261" y="300" width="7" height="10"/>
+      <rect x="300" y="270" width="7" height="10"/><rect x="313" y="270" width="7" height="10"/><rect x="326" y="270" width="7" height="10"/>
+      
+      <!-- Center-left windows -->
+      <rect x="490" y="250" width="9" height="14"/><rect x="506" y="250" width="9" height="14"/><rect x="522" y="250" width="9" height="14"/>
+      <rect x="620" y="240" width="9" height="14"/><rect x="636" y="240" width="9" height="14"/><rect x="652" y="240" width="9" height="14"/>
+      
+      <!-- Center-right windows -->
+      <rect x="1250" y="240" width="9" height="14"/><rect x="1266" y="240" width="9" height="14"/><rect x="1282" y="240" width="9" height="14"/>
+      <rect x="1385" y="250" width="9" height="14"/><rect x="1401" y="250" width="9" height="14"/><rect x="1417" y="250" width="9" height="14"/>
+      
+      <!-- Right cluster windows -->
+      <rect x="1585" y="270" width="7" height="10"/><rect x="1598" y="270" width="7" height="10"/><rect x="1611" y="270" width="7" height="10"/>
+      <rect x="1765" y="260" width="8" height="12"/><rect x="1780" y="260" width="8" height="12"/><rect x="1795" y="260" width="8" height="12"/>
+    </g>
+    <g fill="#00d4aa" opacity="0.5">
+      <rect x="105" y="300" width="8" height="12"/><rect x="135" y="300" width="8" height="12"/>
+      <rect x="490" y="270" width="9" height="14"/><rect x="522" y="270" width="9" height="14"/>
+      <rect x="1250" y="260" width="9" height="14"/><rect x="1282" y="260" width="9" height="14"/>
+      <rect x="1765" y="280" width="8" height="12"/><rect x="1795" y="280" width="8" height="12"/>
+    </g>
+  </g>
+  
+  <!-- ========== NEAR LAYER (Larger, more detail) ========== -->
+  <g opacity="0.85">
+    <!-- Near-left buildings -->
+    <rect x="50" y="240" width="80" height="260" fill="url(#buildingNear)"/>
+    <rect x="135" y="200" width="100" height="300" fill="url(#buildingNear)"/>
+    <rect x="240" y="230" width="75" height="270" fill="url(#buildingNear)"/>
+    <rect x="320" y="210" width="90" height="290" fill="url(#buildingNear)"/>
+    
+    <!-- Near center-left tower -->
+    <rect x="520" y="180" width="85" height="320" fill="url(#buildingNear)"/>
+    <rect x="610" y="200" width="75" height="300" fill="url(#buildingNear)"/>
+    
+    <!-- Near center-right tower -->
+    <rect x="1235" y="200" width="75" height="300" fill="url(#buildingNear)"/>
+    <rect x="1315" y="180" width="85" height="320" fill="url(#buildingNear)"/>
+    
+    <!-- Near-right buildings -->
+    <rect x="1510" y="210" width="90" height="290" fill="url(#buildingNear)"/>
+    <rect x="1605" y="230" width="75" height="270" fill="url(#buildingNear)"/>
+    <rect x="1685" y="200" width="100" height="300" fill="url(#buildingNear)"/>
+    <rect x="1790" y="240" width="80" height="260" fill="url(#buildingNear)"/>
+    
+    <!-- Near-layer windows with more detail -->
+    <g fill="#00a8cc" opacity="0.5">
+      <!-- Left buildings windows -->
+      <rect x="60" y="250" width="12" height="18"/><rect x="78" y="250" width="12" height="18"/><rect x="96" y="250" width="12" height="18"/>
+      <rect x="60" y="278" width="12" height="18"/><rect x="78" y="278" width="12" height="18"/><rect x="96" y="278" width="12" height="18"/>
+      <rect x="60" y="306" width="12" height="18"/><rect x="78" y="306" width="12" height="18"/><rect x="96" y="306" width="12" height="18"/>
+      
+      <rect x="150" y="210" width="14" height="20"/><rect x="172" y="210" width="14" height="20"/><rect x="194" y="210" width="14" height="20"/>
+      <rect x="150" y="240" width="14" height="20"/><rect x="172" y="240" width="14" height="20"/><rect x="194" y="240" width="14" height="20"/>
+      <rect x="150" y="270" width="14" height="20"/><rect x="172" y="270" width="14" height="20"/><rect x="194" y="270" width="14" height="20"/>
+      
+      <rect x="330" y="220" width="13" height="19"/><rect x="350" y="220" width="13" height="19"/><rect x="370" y="220" width="13" height="19"/><rect x="390" y="220" width="13" height="19"/>
+      <rect x="330" y="249" width="13" height="19"/><rect x="350" y="249" width="13" height="19"/><rect x="370" y="249" width="13" height="19"/><rect x="390" y="249" width="13" height="19"/>
+      
+      <!-- Center towers windows -->
+      <rect x="530" y="190" width="14" height="22"/><rect x="552" y="190" width="14" height="22"/><rect x="574" y="190" width="14" height="22"/>
+      <rect x="530" y="222" width="14" height="22"/><rect x="552" y="222" width="14" height="22"/><rect x="574" y="222" width="14" height="22"/>
+      <rect x="530" y="254" width="14" height="22"/><rect x="552" y="254" width="14" height="22"/><rect x="574" y="254" width="14" height="22"/>
+      
+      <rect x="1325" y="190" width="14" height="22"/><rect x="1347" y="190" width="14" height="22"/><rect x="1369" y="190" width="14" height="22"/>
+      <rect x="1325" y="222" width="14" height="22"/><rect x="1347" y="222" width="14" height="22"/><rect x="1369" y="222" width="14" height="22"/>
+      <rect x="1325" y="254" width="14" height="22"/><rect x="1347" y="254" width="14" height="22"/><rect x="1369" y="254" width="14" height="22"/>
+      
+      <!-- Right buildings windows -->
+      <rect x="1520" y="220" width="13" height="19"/><rect x="1540" y="220" width="13" height="19"/><rect x="1560" y="220" width="13" height="19"/><rect x="1580" y="220" width="13" height="19"/>
+      <rect x="1520" y="249" width="13" height="19"/><rect x="1540" y="249" width="13" height="19"/><rect x="1560" y="249" width="13" height="19"/><rect x="1580" y="249" width="13" height="19"/>
+      
+      <rect x="1700" y="210" width="14" height="20"/><rect x="1722" y="210" width="14" height="20"/><rect x="1744" y="210" width="14" height="20"/>
+      <rect x="1700" y="240" width="14" height="20"/><rect x="1722" y="240" width="14" height="20"/><rect x="1744" y="240" width="14" height="20"/>
+      <rect x="1700" y="270" width="14" height="20"/><rect x="1722" y="270" width="14" height="20"/><rect x="1744" y="270" width="14" height="20"/>
+      
+      <rect x="1800" y="250" width="12" height="18"/><rect x="1818" y="250" width="12" height="18"/><rect x="1836" y="250" width="12" height="18"/>
+      <rect x="1800" y="278" width="12" height="18"/><rect x="1818" y="278" width="12" height="18"/><rect x="1836" y="278" width="12" height="18"/>
+    </g>
+    <g fill="#00d4aa" opacity="0.6">
+      <rect x="78" y="278" width="12" height="18"/><rect x="172" y="240" width="14" height="20"/>
+      <rect x="350" y="249" width="13" height="19"/><rect x="552" y="222" width="14" height="22"/>
+      <rect x="1347" y="222" width="14" height="22"/><rect x="1540" y="249" width="13" height="19"/>
+      <rect x="1722" y="240" width="14" height="20"/><rect x="1818" y="278" width="12" height="18"/>
+    </g>
+  </g>
+  
+  <!-- ========== FOREGROUND LAYER (Closest, largest, most detailed) ========== -->
+  <g opacity="0.95">
+    <!-- Foreground left buildings -->
+    <rect x="80" y="200" width="95" height="300" fill="url(#buildingFront)"/>
+    <rect x="180" y="160" width="120" height="340" fill="url(#buildingFront)"/>
+    <rect x="305" y="190" width="85" height="310" fill="url(#buildingFront)"/>
+    
+    <!-- Foreground right buildings -->
+    <rect x="1530" y="190" width="85" height="310" fill="url(#buildingFront)"/>
+    <rect x="1620" y="160" width="120" height="340" fill="url(#buildingFront)"/>
+    <rect x="1745" y="200" width="95" height="300" fill="url(#buildingFront)"/>
+    
+    <!-- Foreground windows - detailed -->
+    <g fill="#00a8cc" opacity="0.6">
+      <!-- Left foreground windows -->
+      <rect x="92" y="215" width="15" height="22"/><rect x="115" y="215" width="15" height="22"/><rect x="138" y="215" width="15" height="22"/>
+      <rect x="92" y="250" width="15" height="22"/><rect x="115" y="250" width="15" height="22"/><rect x="138" y="250" width="15" height="22"/>
+      <rect x="92" y="285" width="15" height="22"/><rect x="115" y="285" width="15" height="22"/><rect x="138" y="285" width="15" height="22"/>
+      <rect x="92" y="320" width="15" height="22"/><rect x="115" y="320" width="15" height="22"/><rect x="138" y="320" width="15" height="22"/>
+      
+      <rect x="198" y="175" width="18" height="26"/><rect x="226" y="175" width="18" height="26"/><rect x="254" y="175" width="18" height="26"/>
+      <rect x="198" y="215" width="18" height="26"/><rect x="226" y="215" width="18" height="26"/><rect x="254" y="215" width="18" height="26"/>
+      <rect x="198" y="255" width="18" height="26"/><rect x="226" y="255" width="18" height="26"/><rect x="254" y="255" width="18" height="26"/>
+      <rect x="198" y="295" width="18" height="26"/><rect x="226" y="295" width="18" height="26"/><rect x="254" y="295" width="18" height="26"/>
+      <rect x="198" y="335" width="18" height="26"/><rect x="226" y="335" width="18" height="26"/><rect x="254" y="335" width="18" height="26"/>
+      
+      <rect x="318" y="205" width="14" height="21"/><rect x="340" y="205" width="14" height="21"/><rect x="362" y="205" width="14" height="21"/>
+      <rect x="318" y="240" width="14" height="21"/><rect x="340" y="240" width="14" height="21"/><rect x="362" y="240" width="14" height="21"/>
+      <rect x="318" y="275" width="14" height="21"/><rect x="340" y="275" width="14" height="21"/><rect x="362" y="275" width="14" height="21"/>
+      
+      <!-- Right foreground windows -->
+      <rect x="1543" y="205" width="14" height="21"/><rect x="1565" y="205" width="14" height="21"/><rect x="1587" y="205" width="14" height="21"/>
+      <rect x="1543" y="240" width="14" height="21"/><rect x="1565" y="240" width="14" height="21"/><rect x="1587" y="240" width="14" height="21"/>
+      <rect x="1543" y="275" width="14" height="21"/><rect x="1565" y="275" width="14" height="21"/><rect x="1587" y="275" width="14" height="21"/>
+      
+      <rect x="1648" y="175" width="18" height="26"/><rect x="1676" y="175" width="18" height="26"/><rect x="1704" y="175" width="18" height="26"/>
+      <rect x="1648" y="215" width="18" height="26"/><rect x="1676" y="215" width="18" height="26"/><rect x="1704" y="215" width="18" height="26"/>
+      <rect x="1648" y="255" width="18" height="26"/><rect x="1676" y="255" width="18" height="26"/><rect x="1704" y="255" width="18" height="26"/>
+      <rect x="1648" y="295" width="18" height="26"/><rect x="1676" y="295" width="18" height="26"/><rect x="1704" y="295" width="18" height="26"/>
+      <rect x="1648" y="335" width="18" height="26"/><rect x="1676" y="335" width="18" height="26"/><rect x="1704" y="335" width="18" height="26"/>
+      
+      <rect x="1757" y="215" width="15" height="22"/><rect x="1780" y="215" width="15" height="22"/><rect x="1803" y="215" width="15" height="22"/>
+      <rect x="1757" y="250" width="15" height="22"/><rect x="1780" y="250" width="15" height="22"/><rect x="1803" y="250" width="15" height="22"/>
+      <rect x="1757" y="285" width="15" height="22"/><rect x="1780" y="285" width="15" height="22"/><rect x="1803" y="285" width="15" height="22"/>
+      <rect x="1757" y="320" width="15" height="22"/><rect x="1780" y="320" width="15" height="22"/><rect x="1803" y="320" width="15" height="22"/>
+    </g>
+    <g fill="#00d4aa" opacity="0.7">
+      <rect x="115" y="250" width="15" height="22"/><rect x="138" y="285" width="15" height="22"/>
+      <rect x="226" y="215" width="18" height="26"/><rect x="254" y="295" width="18" height="26"/>
+      <rect x="340" y="240" width="14" height="21"/>
+      <rect x="1565" y="240" width="14" height="21"/>
+      <rect x="1676" y="215" width="18" height="26"/><rect x="1648" y="295" width="18" height="26"/>
+      <rect x="1780" y="250" width="15" height="22"/><rect x="1757" y="285" width="15" height="22"/>
+    </g>
+  </g>
+  
+  <!-- ========== CABLE-STAYED BRIDGE - LEFT ========== -->
+  <g transform="translate(0, 0)">
+    <!-- Bridge deck -->
+    <rect x="0" y="440" width="450" height="12" fill="url(#bridgeGradient)"/>
+    <rect x="0" y="452" width="450" height="4" fill="#0a1525"/>
+    
+    <!-- Bridge tower/pylon -->
+    <polygon points="200,440 220,440 225,320 215,300 205,300 195,320" fill="url(#bridgeGradient)"/>
+    <rect x="205" y="295" width="10" height="10" fill="#00a8cc" opacity="0.6"/>
+    
+    <!-- Support pillars -->
+    <rect x="80" y="440" width="15" height="60" fill="url(#bridgeGradient)"/>
+    <rect x="320" y="440" width="15" height="60" fill="url(#bridgeGradient)"/>
+    
+    <!-- Cable stays - left side of tower -->
+    <g stroke="url(#cableGradient)" stroke-width="1.5" filter="url(#glow)">
+      <line x1="210" y1="310" x2="50" y2="440"/>
+      <line x1="210" y1="330" x2="80" y2="440"/>
+      <line x1="210" y1="350" x2="110" y2="440"/>
+      <line x1="210" y1="370" x2="140" y2="440"/>
+      <line x1="210" y1="390" x2="170" y2="440"/>
+    </g>
+    
+    <!-- Cable stays - right side of tower -->
+    <g stroke="url(#cableGradient)" stroke-width="1.5" filter="url(#glow)">
+      <line x1="210" y1="310" x2="370" y2="440"/>
+      <line x1="210" y1="330" x2="340" y2="440"/>
+      <line x1="210" y1="350" x2="310" y2="440"/>
+      <line x1="210" y1="370" x2="280" y2="440"/>
+      <line x1="210" y1="390" x2="250" y2="440"/>
+    </g>
+    
+    <!-- Road markings -->
+    <g stroke="#00d4aa" stroke-width="2" stroke-dasharray="20,15" opacity="0.4">
+      <line x1="0" y1="446" x2="450" y2="446"/>
+    </g>
+  </g>
+  
+  <!-- ========== SUSPENSION BRIDGE - RIGHT ========== -->
+  <g transform="translate(1470, 0)">
+    <!-- Bridge deck -->
+    <rect x="0" y="440" width="450" height="12" fill="url(#bridgeGradient)"/>
+    <rect x="0" y="452" width="450" height="4" fill="#0a1525"/>
+    
+    <!-- Bridge towers -->
+    <rect x="100" y="340" width="12" height="100" fill="url(#bridgeGradient)"/>
+    <rect x="95" y="335" width="22" height="10" fill="#00a8cc" opacity="0.5"/>
+    <rect x="338" y="340" width="12" height="100" fill="url(#bridgeGradient)"/>
+    <rect x="333" y="335" width="22" height="10" fill="#00a8cc" opacity="0.5"/>
+    
+    <!-- Support pillars -->
+    <rect x="100" y="440" width="12" height="60" fill="url(#bridgeGradient)"/>
+    <rect x="338" y="440" width="12" height="60" fill="url(#bridgeGradient)"/>
+    
+    <!-- Main suspension cables (catenary curves) -->
+    <g stroke="#00d4aa" stroke-width="2.5" fill="none" filter="url(#glow)">
+      <path d="M 0,380 Q 106,340 106,340"/>
+      <path d="M 106,340 Q 225,400 344,340"/>
+      <path d="M 344,340 Q 344,340 450,380"/>
+    </g>
+    
+    <!-- Vertical suspender cables -->
+    <g stroke="url(#cableGradient)" stroke-width="1" opacity="0.7">
+      <line x1="130" y1="350" x2="130" y2="440"/>
+      <line x1="155" y1="360" x2="155" y2="440"/>
+      <line x1="180" y1="370" x2="180" y2="440"/>
+      <line x1="205" y1="380" x2="205" y2="440"/>
+      <line x1="225" y1="385" x2="225" y2="440"/>
+      <line x1="245" y1="380" x2="245" y2="440"/>
+      <line x1="270" y1="370" x2="270" y2="440"/>
+      <line x1="295" y1="360" x2="295" y2="440"/>
+      <line x1="320" y1="350" x2="320" y2="440"/>
+    </g>
+    
+    <!-- Road markings -->
+    <g stroke="#00d4aa" stroke-width="2" stroke-dasharray="20,15" opacity="0.4">
+      <line x1="0" y1="446" x2="450" y2="446"/>
+    </g>
+  </g>
+  
+  <!-- ========== ARCH BRIDGE - CENTER BOTTOM ========== -->
+  <g transform="translate(700, 30)">
+    <!-- Bridge arch -->
+    <path d="M 0,470 Q 260,380 520,470" fill="none" stroke="url(#bridgeGradient)" stroke-width="18"/>
+    <path d="M 0,470 Q 260,385 520,470" fill="none" stroke="#00a8cc" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Bridge deck -->
+    <rect x="0" y="455" width="520" height="10" fill="url(#bridgeGradient)"/>
+    
+    <!-- Vertical supports from arch to deck -->
+    <g stroke="url(#cableGradient)" stroke-width="2" opacity="0.6">
+      <line x1="65" y1="450" x2="65" y2="455"/>
+      <line x1="130" y1="430" x2="130" y2="455"/>
+      <line x1="195" y1="415" x2="195" y2="455"/>
+      <line x1="260" y1="408" x2="260" y2="455"/>
+      <line x1="325" y1="415" x2="325" y2="455"/>
+      <line x1="390" y1="430" x2="390" y2="455"/>
+      <line x1="455" y1="450" x2="455" y2="455"/>
+    </g>
+    
+    <!-- Road markings -->
+    <g stroke="#00d4aa" stroke-width="2" stroke-dasharray="15,12" opacity="0.35">
+      <line x1="0" y1="460" x2="520" y2="460"/>
+    </g>
+  </g>
+  
+  <!-- ========== HIGHWAY/ROAD INFRASTRUCTURE ========== -->
+  <g opacity="0.6">
+    <!-- Elevated highway section - left -->
+    <rect x="420" y="420" width="180" height="8" fill="url(#roadGradient)"/>
+    <rect x="440" y="420" width="8" height="80" fill="url(#bridgeGradient)"/>
+    <rect x="560" y="420" width="8" height="80" fill="url(#bridgeGradient)"/>
+    <line x1="420" y1="424" x2="600" y2="424" stroke="#00d4aa" stroke-width="1" stroke-dasharray="12,8" opacity="0.4"/>
+    
+    <!-- Elevated highway section - right -->
+    <rect x="1320" y="420" width="180" height="8" fill="url(#roadGradient)"/>
+    <rect x="1352" y="420" width="8" height="80" fill="url(#bridgeGradient)"/>
+    <rect x="1472" y="420" width="8" height="80" fill="url(#bridgeGradient)"/>
+    <line x1="1320" y1="424" x2="1500" y2="424" stroke="#00d4aa" stroke-width="1" stroke-dasharray="12,8" opacity="0.4"/>
+  </g>
+  
+  <!-- ========== CENTRAL 3D WIREFRAME CUBE (BIM MODEL) ========== -->
+  <g transform="translate(960, 250)" filter="url(#glow)">
+    <!-- Back face -->
+    <path d="M -70 -35 L 70 -35 L 70 105 L -70 105 Z" fill="none" stroke="#00a8cc" stroke-width="1" opacity="0.25"/>
+    <!-- Left face -->
+    <path d="M -115 -70 L -70 -35 L -70 105 L -115 70 Z" fill="none" stroke="#00a8cc" stroke-width="1.5" opacity="0.4"/>
+    <!-- Top face -->
+    <path d="M -115 -70 L -70 -35 L 70 -35 L 25 -70 Z" fill="none" stroke="#00a8cc" stroke-width="1.5" opacity="0.5"/>
+    <!-- Front face -->
+    <path d="M -115 -70 L 25 -70 L 25 70 L -115 70 Z" fill="none" stroke="#00d4aa" stroke-width="2.5" opacity="0.85"/>
+    <!-- Right face -->
+    <path d="M 25 -70 L 70 -35 L 70 105 L 25 70 Z" fill="none" stroke="#00d4aa" stroke-width="1.5" opacity="0.55"/>
+    <!-- Bottom face -->
+    <path d="M -115 70 L -70 105 L 70 105 L 25 70 Z" fill="none" stroke="#00a8cc" stroke-width="1" opacity="0.35"/>
+    
+    <!-- Internal structure lines (floor plates) -->
+    <line x1="-95" y1="-20" x2="45" y2="-20" stroke="#00d4aa" stroke-width="0.5" opacity="0.35"/>
+    <line x1="-95" y1="25" x2="45" y2="25" stroke="#00d4aa" stroke-width="0.5" opacity="0.35"/>
+    
+    <!-- Internal structure lines (vertical) -->
+    <line x1="-45" y1="-55" x2="-45" y2="85" stroke="#00d4aa" stroke-width="0.5" opacity="0.35"/>
+    <line x1="5" y1="-55" x2="5" y2="85" stroke="#00d4aa" stroke-width="0.5" opacity="0.35"/>
+  </g>
+  
+  <!-- ========== DATA FLOW LINES ========== -->
+  <g filter="url(#glow)">
+    <!-- Left flows -->
+    <path d="M 150 450 Q 400 380 700 300" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.5" stroke-dasharray="8,4">
+      <animate attributeName="stroke-dashoffset" from="0" to="24" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 250 480 Q 500 400 800 320" fill="none" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.35" stroke-dasharray="6,3">
+      <animate attributeName="stroke-dashoffset" from="0" to="18" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Right flows -->
+    <path d="M 1770 450 Q 1520 380 1220 300" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.5" stroke-dasharray="8,4">
+      <animate attributeName="stroke-dashoffset" from="0" to="24" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1670 480 Q 1420 400 1120 320" fill="none" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.35" stroke-dasharray="6,3">
+      <animate attributeName="stroke-dashoffset" from="0" to="18" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- ========== FLOATING DATA POINTS ========== -->
+  <g filter="url(#glow)">
+    <!-- Left cluster -->
+    <circle cx="580" cy="160" r="5" fill="#00d4aa" opacity="0.8"/>
+    <circle cx="630" cy="130" r="4" fill="#00a8cc" opacity="0.6"/>
+    <circle cx="680" cy="170" r="6" fill="#00d4aa" opacity="0.7"/>
+    <circle cx="540" cy="200" r="4" fill="#00a8cc" opacity="0.5"/>
+    <circle cx="620" cy="220" r="5" fill="#00d4aa" opacity="0.6"/>
+    <line x1="580" y1="160" x2="630" y2="130" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    <line x1="630" y1="130" x2="680" y2="170" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    <line x1="580" y1="160" x2="540" y2="200" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    <line x1="580" y1="160" x2="620" y2="220" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    
+    <!-- Right cluster -->
+    <circle cx="1340" cy="160" r="5" fill="#00d4aa" opacity="0.8"/>
+    <circle cx="1290" cy="130" r="4" fill="#00a8cc" opacity="0.6"/>
+    <circle cx="1240" cy="170" r="6" fill="#00d4aa" opacity="0.7"/>
+    <circle cx="1380" cy="200" r="4" fill="#00a8cc" opacity="0.5"/>
+    <circle cx="1300" cy="220" r="5" fill="#00d4aa" opacity="0.6"/>
+    <line x1="1340" y1="160" x2="1290" y2="130" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1290" y1="130" x2="1240" y2="170" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1340" y1="160" x2="1380" y2="200" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1340" y1="160" x2="1300" y2="220" stroke="#00a8cc" stroke-width="0.5" opacity="0.4"/>
+  </g>
+  
+  <!-- ========== CHART/BENCHMARKING ELEMENTS ========== -->
+  <g transform="translate(720, 340)" opacity="0.45">
+    <rect x="0" y="5" width="10" height="55" fill="#00a8cc"/>
+    <rect x="18" y="20" width="10" height="40" fill="#00d4aa"/>
+    <rect x="36" y="10" width="10" height="50" fill="#00a8cc"/>
+    <rect x="54" y="28" width="10" height="32" fill="#00d4aa"/>
+    <rect x="72" y="0" width="10" height="60" fill="#00a8cc"/>
+  </g>
+  
+  <g transform="translate(1110, 340)" opacity="0.45">
+    <rect x="0" y="15" width="10" height="45" fill="#00d4aa"/>
+    <rect x="18" y="0" width="10" height="60" fill="#00a8cc"/>
+    <rect x="36" y="22" width="10" height="38" fill="#00d4aa"/>
+    <rect x="54" y="8" width="10" height="52" fill="#00a8cc"/>
+    <rect x="72" y="18" width="10" height="42" fill="#00d4aa"/>
+  </g>
+  
+  <!-- ========== MEASUREMENT RULER ========== -->
+  <g opacity="0.35" filter="url(#glow)">
+    <line x1="800" y1="410" x2="1120" y2="410" stroke="#00d4aa" stroke-width="1"/>
+    <line x1="800" y1="405" x2="800" y2="415" stroke="#00d4aa" stroke-width="2"/>
+    <line x1="1120" y1="405" x2="1120" y2="415" stroke="#00d4aa" stroke-width="2"/>
+    <line x1="960" y1="407" x2="960" y2="413" stroke="#00d4aa" stroke-width="1"/>
+    <line x1="880" y1="408" x2="880" y2="412" stroke="#00d4aa" stroke-width="0.5"/>
+    <line x1="1040" y1="408" x2="1040" y2="412" stroke="#00d4aa" stroke-width="0.5"/>
+  </g>
+  
+  <!-- ========== CORNER ACCENTS ========== -->
+  <g opacity="0.6">
+    <path d="M 0 80 L 0 0 L 80 0" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+    <path d="M 0 60 L 0 20 L 60 20" fill="none" stroke="url(#accentGradient)" stroke-width="1" opacity="0.5"/>
+    
+    <path d="M 1920 80 L 1920 0 L 1840 0" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+    <path d="M 1920 60 L 1920 20 L 1860 20" fill="none" stroke="url(#accentGradient)" stroke-width="1" opacity="0.5"/>
+    
+    <path d="M 0 420 L 0 500 L 80 500" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+    <path d="M 1920 420 L 1920 500 L 1840 500" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+  </g>
+  
+  <!-- Subtle radial glow in center -->
+  <ellipse cx="960" cy="250" rx="450" ry="220" fill="url(#gridGlow)" opacity="0.25"/>
+  
+</svg>

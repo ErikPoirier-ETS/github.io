@@ -1,0 +1,92 @@
+#################### default parameters ############################
+# favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
+favicon = "images/favicon.png"
+# logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
+logo = "images/logo.png"
+logo_darkmode = "images/logo-darkmode.png"
+logo_width = "200px"
+logo_height = ""
+logo_text = "BIM Benchmarking"
+# Sitemap
+sitemap_changefreq = "weekly"
+sitemap_priority = 0.5
+
+# use `px` or `x` with logo_width, example: "100px" or "2x"
+# currently supported logo is dark version  logo only supports dark mode: logo_darkmode = "images/logo-darkmode.png"
+
+# Meta data
+author = "GRIDD Research Group"
+description = "Plateforme de benchmarking pour la transformation numérique dans l'industrie des actifs bâtis | Benchmarking Platform for Digital Transformation in the Built Asset Industry"
+image = "images/og-image.png"
+
+# contact info
+address = "ÉTS — 1100, rue Notre-Dame Ouest, Montréal, QC H3C 1K3"
+mobile = ""
+email = "erik.poirier@etsmtl.ca"
+contact_form_action = "#"
+
+# announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
+[announcement]
+enable = false
+expire_days = 7
+content = ""
+
+# navigation buttons
+[navigation_button]
+enable = true
+label = "Contact"
+link = "contact"
+language_switch = true
+
+# search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
+[search]
+enable = true
+primary_color = ""
+include_sections = ["team", "projects", "results"]
+show_image = true
+show_description = true
+show_tags = true
+show_categories = true
+
+# verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
+[site_verification]
+google = ""
+bing = ""
+baidu = ""
+facebook = ""
+mastodon = ""
+
+# cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
+[cookies]
+enable = false
+expire_days = 60
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+# feedback module: https://github.com/gethugothemes/hugo-modules/tree/master/components/feedback
+[feedback]
+enable = false
+
+# Subscription
+[subscription]
+enable = false
+newsletter_title = "Newsletter"
+newsletter_description = ""
+newsletter_name_label = "Name"
+newsletter_name_placeholder = "Enter your name"
+newsletter_email_label = "Email"
+newsletter_email_placeholder = "Enter your email"
+newsletter_button = "Subscribe"
+mailchimp_form_action = ""
+mailchimp_form_name = ""
+
+# copyright
+copyright = "© 2025 GRIDD — ÉTS, UQAM, Polytechnique"
+
+# Multilingual
+[multilingual]
+enable = true
+
+# Dark mode
+[darkmode]
+enable = false

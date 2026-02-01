@@ -1,0 +1,41 @@
+# main menu (French)
+[[main]]
+name = "Accueil"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Équipe"
+url = "team/"
+weight = 2
+
+[[main]]
+name = "Résultats"
+url = "results/"
+weight = 4
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+# footer menu (French)
+[[footer]]
+name = "Équipe"
+url = "team/"
+weight = 1
+
+[[footer]]
+name = "Projets"
+url = "projects/"
+weight = 2
+
+[[footer]]
+name = "Résultats"
+url = "results/"
+weight = 3
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 4
