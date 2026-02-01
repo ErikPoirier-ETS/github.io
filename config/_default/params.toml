@@ -23,7 +23,7 @@ image = "images/og-image.png"
 address = "ÉTS — 1100, rue Notre-Dame Ouest, Montréal, QC H3C 1K3"
 mobile = ""
 email = "erik.poirier@etsmtl.ca"
-contact_form_action = "#"
+contact_form_action = "https://formspree.io/f/xjgoylql"
 
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
 [announcement]
