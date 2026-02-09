@@ -65,3 +65,12 @@
 .card-researcher-linkedin a:hover {
   text-decoration: underline;
 }
+
+.partners-description a {
+  color: #0d9488; /* your teal color */
+  text-decoration: underline;
+}
+
+  .partners-description a:hover {
+    opacity: 0.8;
+  }
