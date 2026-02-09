@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\assets\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\_partials\\partners.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:layouts\\_partials\\partners.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:layouts\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:layouts\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\content\\french\\_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:content\\french\\_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\content\\english\\_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:content\\english\\_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +34,90 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "custom.css",
+              "DocumentMoniker": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\assets\\css\\custom.css",
+              "RelativeDocumentMoniker": "assets\\css\\custom.css",
+              "ToolTip": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\assets\\css\\custom.css",
+              "RelativeToolTip": "assets\\css\\custom.css",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-09T16:33:00.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "about.html",
+              "DocumentMoniker": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\about.html",
+              "RelativeDocumentMoniker": "layouts\\about.html",
+              "ToolTip": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\about.html",
+              "RelativeToolTip": "layouts\\about.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-09T16:26:20.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\home.html",
+              "RelativeDocumentMoniker": "layouts\\home.html",
+              "ToolTip": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\home.html",
+              "RelativeToolTip": "layouts\\home.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-09T16:25:06.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "partners.html",
+              "DocumentMoniker": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\_partials\\partners.html",
+              "RelativeDocumentMoniker": "layouts\\_partials\\partners.html",
+              "ToolTip": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\layouts\\_partials\\partners.html",
+              "RelativeToolTip": "layouts\\_partials\\partners.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-09T16:24:04.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_index.md",
+              "DocumentMoniker": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\content\\french\\_index.md",
+              "RelativeDocumentMoniker": "content\\french\\_index.md",
+              "ToolTip": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\content\\french\\_index.md",
+              "RelativeToolTip": "content\\french\\_index.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-09T16:10:47.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_index.md",
+              "DocumentMoniker": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\content\\english\\_index.md",
+              "RelativeDocumentMoniker": "content\\english\\_index.md",
+              "ToolTip": "C:\\Users\\epoirier\\source\\repos\\ErikPoirier-ETS.github.io\\content\\english\\_index.md",
+              "RelativeToolTip": "content\\english\\_index.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-09T16:07:09.016Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"

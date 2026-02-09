@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets\\css",
+    "\\content\\english",
+    "\\content\\french",
+    "\\static",
+    "\\static\\images",
+    "\\static\\images\\team"
   ],
-  "SelectedNode": "\\C:\\Users\\epoirier\\Source\\Repos\\ErikPoirier-ETS.github.io",
+  "SelectedNode": "\\assets",
   "PreviewInSolutionExplorer": false
 }
