@@ -13,7 +13,7 @@ banner:
 partners:
   enable: true
   title: "Our Partners"
-  description: "The research project is being conducted in close collaboration with six public sector clients participating in the Government Roadmap for BIM and three academic institutions."
+  description: "The research project is being conducted in close collaboration with six public sector clients participating in the [Government Roadmap for BIM](https://www.sqi.gouv.qc.ca/feuille-de-route-gouvernementale-pour-le-bim) and three academic institutions."
   
   public_owners:
     title: "Public Owners"

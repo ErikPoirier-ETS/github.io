@@ -13,7 +13,7 @@ banner:
 partners:
   enable: true
   title: "Nos partenaires"
-  description: "Le projet de recherche se fait en étroite collaboration avec six donneurs d'ouvrage publics participant à la Feuille de route gouvernementale pour le BIM et trois institutions académiques"
+  description: "Le projet de recherche se fait en étroite collaboration avec six donneurs d'ouvrage publics participant à la [Feuille de route gouvernementale pour le BIM](https://www.sqi.gouv.qc.ca/feuille-de-route-gouvernementale-pour-le-bim) et trois institutions académiques"
   
   public_owners:
     title: "Donneurs d'ouvrage publics"
